@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Manikandan">
+        <title>My Web Page</title>
+        <link rel="icon" href="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-0.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <header>
+        <h1>Welcome to My Web Page</h1><hr>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#list">Lists</a></li>
+                    <li><a href="#anchor">Anchor</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <section id="home">
+        <h3>I learn from <abbr title="Mozilla Development Network"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a></abbr> Resources</h3>
+        <p><em>This page is created by </em><strong><u>Manikandan</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;asmk</p>
+        <p>This is a simple HTML page.</p>
+        <p><a href="aboutme.html" >About Me</a></p>
+        &lt;
+        <br>
+        &copy; 2023 Manikandan. All rights reserved.
+        <br><br>
+        <!--this is used to command-->
+        <address>Pollachi</address>
+        </section>
+        <hr>
+        <section id="list">
+        <h1>Lists</h1>
+        <p><b>Ordered List Items</b></p>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <p><b>Unordered List Items</b></p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <p><b>Description List Items</b></p>
+        <dl>
+            <dt>Item 1</dt><dd>Maida</dd>
+            <dt>Item 2</dt><dd>Flour</dd>
+            <dt>Item 3</dt><dd>Rice</dd>
+        </dl>
+        </section>
+        <hr>
+        <section id="anchor">
+        <h1>Anchour tag</h1>
+        <a href="https://validator.w3.org/#validate_by_upload">W3C Validator</a>
+        </section>
+        <hr>
+        <a href="#">Back to Top</a>
+        <hr>
+        <h1>Add Images</h1>
+        <figure>
+        <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-0.png" alt="Siva" width="500" height="300" title="HTML5 Logo" loading="lazy">
+        <figcaption>HTML5 Logo</figcaption>
+        </figure>
+        <figure>
+            <figcaption>Example of HTML Code</figcaption>
+            <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+        </figure>
+        <hr>
+        <h1>Semantic Tags</h1>
+        <p><a href="semantic.html">Semantic tags Questions</a></p>
+        <hr>
+        <h1>Create Tables</h1>
+        <table>
+            <caption>About Table</caption>
+            <thead>
+                <tr>
+                    <th id="name">Name</th>
+                    <th id="reg">Reg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td headers="name">Manikandan</td>
+                    <td headers="reg">117</td>
+                </tr>
+                <tr>
+                    <td headers="name">Asfar</td>
+                    <td headers="reg">883</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" >Kishore</td>
+                    <td>108</td>
+                </tr>
+                <tr>
+                    <td>111</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <h1>Contact Me</h1>
+        <fieldset>
+            <legend>Contact Form</legend>
+        <article id="contact">
+            <form action="https://httpbin.org/get" method="get">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" autocomplete="on" autofocus required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <br><br>
+                <label for="phonenumber">Phone Number:</label>
+                <input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter your phone number" required pattern="[0-9]{10}">
+                <br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="age" required min="0" max="120">
+                <br><br>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required multiple size="3">
+                    <optgroup label="normalgender">
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                    </optgroup>
+                    <optgroup label="othergender">
+                    <option value="nonbinary">Non-Binary</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <!-- <label for="datalistgender">Data List Gender:</label>
+                <input type="text" name="datalistgender" id="datalistgender" list="genderlist">
+                <datalist id="genderlist">
+                    <option value="male" selected>
+                    <option value="female">
+                    <option value="nonbinary">
+                </datalist>
+                <br><br> -->
+                <fieldset>
+                    <legend>Favorite Pet</legend>
+                    <input type="radio" name="pet" id="Dog" value="Dog">
+                    <label for="Dog">Dog</label>
+                    <br>
+                    <input type="radio" name="pet" id="Cat" value="Cat">
+                    <label for="Cat">Cat</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Favorite Food</legend>   
+                    <input type="checkbox" name="food" id="Fish" value="Fish">
+                    <label for="Fish">Fish</label>
+                    <br>
+                    <input type="checkbox" name="food" id="Squid" value="Squid">
+                    <label for="Squid">Squid</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="1" cols="50" required placeholder="type your message"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+        </fieldset>
+    </body> 
+</html>

@@ -1,0 +1,11 @@
+html{
+    front-size:22px;
+}
+body{
+    background-color: aqua;
+    color: rgb(61, 36, 36);
+}
+table,tr,td,th,caption{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
